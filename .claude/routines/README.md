@@ -1,7 +1,7 @@
 # routines — 예약 루틴 프롬프트
 
-루틴은 claude.ai 의 Routines(루틴) 화면에서 만든다. 세션 안에서 만든 루틴은 노션·캘린더 연결이 붙지 않으므로
-(2026-10-26 확인) 아래 파일의 프롬프트를 복사해 UI에서 생성하고, 연결(Connectors)에 Notion과 Google Calendar를 켠다.
+(2026-10-26 변경) 루틴은 **맥의 ICD 팀 폴더에서 예약 작업으로** 돌린다. 클라우드 루틴은 맥 팀의 수첩을 읽지 못하기 때문이다.
+맥 Claude Code에 노션 연결을 먼저 하고, 아래 프롬프트를 맥 팀 방식에 맞게 옮긴다. 결과는 노션 팀 보고 DB에 쌓인다(`../handoff/notion-contract.md`).
 
 | 파일 | 이름 | 시간 (Asia/Seoul, 평일) | 연결 |
 | --- | --- | --- | --- |
@@ -11,5 +11,5 @@
 
 cron: `45 9 * * 1-5` / `10 13 * * 1-5` / `10 18 * * 1-5` (시간대 Asia/Seoul)
 
-세션 안에서 만들었다가 비활성화한 트리거 3개(trig_01QDpch5ioibNBCVqvZ5LBre, trig_01Q9REGh6oQu12BSp44zNSbN,
-trig_01KHH66Ke1bzv7VhaWYTP7eB)는 UI에서 새로 만든 뒤 삭제한다.
+클라우드에 만들었다가 비활성화한 예약 3개(trig_01QDpch5ioibNBCVqvZ5LBre, trig_01Q9REGh6oQu12BSp44zNSbN,
+trig_01KHH66Ke1bzv7VhaWYTP7eB)는 맥 예약 작업이 돌기 시작하면 사용자 승인 후 삭제한다.
