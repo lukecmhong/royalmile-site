@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Notion",
+      "mcp__plugin_Notion_notion",
+      "mcp__Google_Calendar",
+      "WebSearch",
+      "WebFetch",
+      "Edit(.claude/**)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git push -u origin claude/*)"
+    ],
+    "ask": [
+      "mcp__Notion__notion-delete-pages",
+      "mcp__Notion__notion-delete-databases",
+      "mcp__Google_Calendar__create_event",
+      "mcp__Google_Calendar__update_event",
+      "mcp__Google_Calendar__delete_event"
+    ]
+  }
+}

@@ -111,7 +111,7 @@ python3 -m http.server 8080   # → http://localhost:8080
 
 - `.claude/agents/` 직원 6명: planner(기획자), researcher(조사원), reviewer-developer(디벨로퍼), reviewer-architect(건축가), reviewer-operator(운영자·임차인), auditor(감사자)
 - `.claude/skills/` 파이프라인 3개: `site-review`(부지 검토), `brand-scout`(브랜드 탐색), `learn-source`(학습)
-- `.claude/knowledge/` 직원별 학습 노트와 `boss-feedback.md`. 직원은 출근 시 자기 파일을 읽는다. `learn-source` 만 여기에 쓴다. 맨 아래 추가만, 삭제 금지.
+- `.claude/knowledge/` 직원별 학습 노트와 `boss-feedback.md`. 노션 화면을 만들거나 고칠 때는 `notion-dashboard.md` 를 먼저 읽는다. 직원은 출근 시 자기 파일을 읽는다. `learn-source` 만 여기에 쓴다. 맨 아래 추가만, 삭제 금지.
 
 원칙: 만드는 역할과 검사하는 역할을 분리한다. 심사위원 3명은 서로 결과를 보지 않고 독립 반론한다. 반론 3개 미만은 실패. 소장님 전달·외부 발송·노션 기존 기록 수정은 사용자가 한다.
 
