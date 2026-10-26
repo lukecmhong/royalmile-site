@@ -104,3 +104,15 @@ python3 -m http.server 8080   # → http://localhost:8080
   `main` 반영은 사용자가 PR 머지로 직접 결정한다.
 - 커밋 메시지는 한국어, 무엇을 왜 바꿨는지 한 줄. 기존 로그 스타일을 따른다.
 - PR은 사용자가 요청할 때만 만든다.
+
+## ICD 공간기획 AI 팀 (사이트 작업과 별개)
+
+이 저장소에는 사이트 코드 외에 사용자의 본업(ICD 건축사무소 공간기획·상권분석·브랜드 발굴)을 돕는 에이전트 팀이 들어 있다.
+
+- `.claude/agents/` 직원 6명: planner(기획자), researcher(조사원), reviewer-developer(디벨로퍼), reviewer-architect(건축가), reviewer-operator(운영자·임차인), auditor(감사자)
+- `.claude/skills/` 파이프라인 3개: `site-review`(부지 검토), `brand-scout`(브랜드 탐색), `learn-source`(학습)
+- `.claude/knowledge/` 직원별 학습 노트와 `boss-feedback.md`. 직원은 출근 시 자기 파일을 읽는다. `learn-source` 만 여기에 쓴다. 맨 아래 추가만, 삭제 금지.
+
+원칙: 만드는 역할과 검사하는 역할을 분리한다. 심사위원 3명은 서로 결과를 보지 않고 독립 반론한다. 반론 3개 미만은 실패. 소장님 전달·외부 발송·노션 기존 기록 수정은 사용자가 한다.
+
+호출 예: "이 부지 검토해줘 [주소]", "오늘 브랜드 5개", "이 영상 학습해줘 [링크]", "소장님이 이렇게 말씀하셨어 …".
